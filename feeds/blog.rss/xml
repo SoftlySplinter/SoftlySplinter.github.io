@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alexander D Brown - Blog</title><link>http://blog.alexanderdbrown.com/</link><description></description><atom:link href="http://blog.alexanderdbrown.com/feeds/blog.rss/xml" rel="self"></atom:link><lastBuildDate>Mon, 18 Nov 2013 17:08:00 +0000</lastBuildDate><item><title>Armok</title><link>http://blog.alexanderdbrown.com/armok.html</link><description>&lt;p&gt;For those who don&amp;#8217;t know me, I do love 
+&lt;a href="http://bay12games.com/dwarves/"&gt;Dwarf Fortress&lt;/a&gt; here and there. A while back I
+found &lt;a href="https://github.com/Frib/Armoki/"&gt;Armok&lt;/a&gt;; a programming language inspired 
+by the stupendous amounts of !!fun!! dwarf fortress can&amp;nbsp;be.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Armok Logo" src="/images/armok.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The only problem with the existing Armok is that it is written in C#, which I
+didn&amp;#8217;t really know how to sort out in my Linux environment (I know I could use 
+mono, but I wanted a properly native environment). So there was only one thing 
+to do: write my own. &lt;a href="https://github.com/SoftlySplinter/c-armok"&gt;c-armok&lt;/a&gt; was&amp;nbsp;born.&lt;/p&gt;
+&lt;p&gt;At the moment its all working. Perhaps not the most efficient implementation,
+but it is my first interpreter (I can&amp;#8217;t call it a compiler as it doesn&amp;#8217;t compile
+into&amp;nbsp;anything).&lt;/p&gt;
+&lt;p&gt;I now want to go on and add language features, I&amp;#8217;ve got some ideas about using
+stairs to handle jumps and such. But its been good fun hacking (and I mean 
+hacking in the open source, playing with code sense and not &lt;em&gt;cracking&lt;/em&gt;) about
+with C for a couple of days. The code could be prettier, but I think its simple
+enough that it should be understandable to most&amp;nbsp;people.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve also got some thoughts on example programs involving more than one dwarf 
+and probably, lots more&amp;nbsp;!!fun!!.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Brown</dc:creator><pubDate>Mon, 18 Nov 2013 17:08:00 +0000</pubDate><guid>tag:blog.alexanderdbrown.com,2013-11-18:armok.html</guid><category>C</category><category>Dwarf Fortress</category><category>Programming</category><category>Fun</category></item><item><title>Gregynog 2013</title><link>http://blog.alexanderdbrown.com/gregynog-2013.html</link><description>&lt;p&gt;So its that time of year when CVs get taken to pieces, embarrassing pictures are shown (with some censoring) and students quake in front of interviewers. Yes its the Gregynog employability event&amp;nbsp;again.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Gregynog Hall" src="/images/gregynog.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Every year the department of computer science from Aberystwyth University take some of the second years who plan to take a year out to work in industry to the Gregynog hall to run a mock assessment&amp;nbsp;centre.&lt;/p&gt;
+&lt;p&gt;Once again I’m along to give a presentation on my year in industry (this year with two fellow students, Matt and Matt) and on how to do social media. I always get thinking during this time, I know I’m not the best at using social media, but a quick google shows that my blog is in the first page of results for “Alexander D Brown” (not bad given how common that name is) and I’m top for “Alexander Brown&amp;nbsp;Aberystwyth”.&lt;/p&gt;
+&lt;p&gt;This year I’ve got a few things I already want to do, and I haven’t even started my slot&amp;nbsp;yet:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Get business&amp;nbsp;cards.&lt;/li&gt;
+&lt;li&gt;Get a proper open source commit. I’ve got a few issues, an open source project that didn’t get off the ground&amp;nbsp;enough.&lt;/li&gt;
+&lt;li&gt;Play with compilers. But that’s because I’m kind of interested nowadays (thanks to Jim Finnis and&amp;nbsp;lana).&lt;/li&gt;
+&lt;li&gt;Look at, configure and play with&amp;nbsp;Hadoop.&lt;/li&gt;
+&lt;li&gt;I’ll probably have added to that list by the end of&amp;nbsp;tomorrow.&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Brown</dc:creator><pubDate>Fri, 08 Nov 2013 00:00:00 +0000</pubDate><guid>tag:blog.alexanderdbrown.com,2013-11-08:gregynog-2013.html</guid><category>Employability</category><category>Gregyong</category></item><item><title>ISPA 2013</title><link>http://blog.alexanderdbrown.com/ispa-2013.html</link><description>&lt;p&gt;On September 3rd, I was lucky enough to attend the 8th International Symposium on Image and Signal Processing and Analysis (&lt;span class="caps"&gt;ISPA&lt;/span&gt; 2013) which also happened to be my first academic conference. The reason for attending this was to present a paper and to generally network with other&amp;nbsp;academics.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Trieste" src="/images/ispa2013.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The paper was entitled “Can we date an artists work from catalogue photographs?”, presented in the special session on digital imaging in cultural heritage. The paper came from my third year project at Aberystwyth University on Kyffin&amp;nbsp;Williams.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Presentation First Page" src="/images/ispa2013-kyffin.png" /&gt;&lt;/p&gt;
+&lt;p&gt;The conference was definitely an interesting experience; some talks were just brain meltingly in-depth but some, perhaps more importantly, weren’t all that impressive due to lack of experimentation or&amp;nbsp;methodology.&lt;/p&gt;
+&lt;p&gt;The special session on Digital Imaging in Cultural Heritage (which the paper was included in) was a really good session with some impressive research and implementation of existing ideas. The Cultural Heritage Omni-Stereo Panoramas for Immersive Cultural Analytics - From the Nile to the Hijaz was of note for myself, not just because of the implementation of the research, but being able to try out the Oculus Rift. It works surprisingly well for those with eyesight&amp;nbsp;problems.&lt;/p&gt;
+&lt;p&gt;The session on Image Segmentation was another interesting one, Computationally Efficient Approximations of Complex Image Segmentation Metrics and Coverage segmentation of thin structures by linear unmixing and local centre of gravity attraction were both really good pieces of research. The former was a very detailed and well researched paper, while the latter brought forward a really useful idea which I’d love to try out for a real&amp;nbsp;problem.&lt;/p&gt;
+&lt;p&gt;The keynote by Professor Andrea Cavallaro was one of the best talks I have been to and, although it was cut short due to time, gave a very good introduction into the world of video&amp;nbsp;tracking.&lt;/p&gt;
+&lt;p&gt;Finally, the session on 3-D Imaging was a very interesting one, partly because it was a session I wouldn’t have normally attended, but because of another Aberystwyth student, Yittin Zhao, it was nice to support another fellow. His talk on Contrast-based Surface Saliency was quite interesting, although a little in depth for myself. On 2.5D Surface Reconstruction of Cell Cultures was another interesting talk in the&amp;nbsp;session.&lt;/p&gt;
+&lt;p&gt;Outside the conference, I can say that Trieste is a lovely place, quite similar to Aberystwyth (but larger). Although the distance from the airport to the city is only slightly expensive if you arrive just as the two-hourly bus&amp;nbsp;departs.&lt;/p&gt;
+&lt;p&gt;So all-in-all, some brain-melting image processing, some real enthusiasm and more than just a little free wine at the conference reception (but I stayed behind my supervisor, so its all good&amp;nbsp;;)).&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Brown</dc:creator><pubDate>Wed, 11 Sep 2013 00:00:00 +0100</pubDate><guid>tag:blog.alexanderdbrown.com,2013-09-11:ispa-2013.html</guid><category>Academic</category><category>ISPA 2013</category><category>Kyffin Williams</category></item><item><title>A near miss</title><link>http://blog.alexanderdbrown.com/a-near-miss.html</link><description>&lt;p&gt;Last Monday I had a very near&amp;nbsp;miss.&lt;/p&gt;
+&lt;p&gt;In the early afternoon, when my girlfriend was about to make a nice late lunch, I got a call, which followed this sort of&amp;nbsp;line:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class="caps"&gt;DC&lt;/span&gt; Williamson: Hello this is &lt;span class="caps"&gt;DC&lt;/span&gt; Williamson of Hammersimth police. Is Mr Brown&amp;nbsp;in?&lt;/p&gt;
+&lt;p&gt;Me: Yes speaking, actually is it for me or my&amp;nbsp;father?&lt;/p&gt;
+&lt;p&gt;&lt;span class="caps"&gt;DC&lt;/span&gt; Williamson: Your father, actually this might concern you too. I’ve apprehended a suspect who claims to be your father’s grandchild and has cloned copies of both your&amp;nbsp;cards.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;At this point I’m already stressed. Hearing someone has cloned your cards is never good news and as I’m an only child and don’t have any&amp;nbsp;children.&lt;/p&gt;
+&lt;p&gt;The conversation continues on, this nice man provides me with his badge number, some reference numbers and asks me to call the number on the back of my bank card to get in touch with my bank. Also saying that I can call him at anytime through 101 and just ask for his department and badge&amp;nbsp;number.&lt;/p&gt;
+&lt;p&gt;I proceded to call my bank, chat to the nice advisor there who found a payment for an Apple Mac Pro (and made it void) then found a transaction from another of my accounts which could not be stopped. His advice was to withdraw as much money as possible so that the withdrawal limit would stop that transaction from happening at 5pm. He had also had his manager listen back to the phone call which had initiated this transfer and had found that the security on it wasn’t high&amp;nbsp;enough.&lt;/p&gt;
+&lt;p&gt;The conversation continued at this point a bit like&amp;nbsp;so:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Advisor: Where is your local branch? Can you get to it before 4:30pm when it&amp;nbsp;closes?&lt;/p&gt;
+&lt;p&gt;Me: Yes, its&amp;nbsp;here.&lt;/p&gt;
+&lt;p&gt;Advisor: Oh, well there’s actually an investigation going on with local police into that branch and we believe one person in there may be working with these people. When you withdraw the money its essential that you do not mention fraud or anything to that effect. Say you want to buy a new car or&amp;nbsp;something.&lt;/p&gt;
+&lt;p&gt;Me: Would it be easier to go to another&amp;nbsp;branch?&lt;/p&gt;
+&lt;p&gt;Advisor: No, its better going to your normal branch and acting&amp;nbsp;casual.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;He reeled off some more spiel about how he was now my personal banker and that I shouldn’t talk to anyone else. He would call me back in 30-45 minutes to continue on the&amp;nbsp;process.&lt;/p&gt;
+&lt;p&gt;Okay, stressed and worried I rushed to my branch, withdrew as much money as possible in cash and came home. There I decided to update &lt;span class="caps"&gt;DC&lt;/span&gt; Williamson on how things were&amp;nbsp;going.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;101 Switchboard: Hello, who are you&amp;nbsp;after?&lt;/p&gt;
+&lt;p&gt;Me: &lt;span class="caps"&gt;DC&lt;/span&gt; Williamson, badge number&amp;nbsp;&lt;span class="caps"&gt;EK1&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;101 Switchboard: There is no one here by that name and that number is&amp;nbsp;fake.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Cue nasty sinking&amp;nbsp;feeling.&lt;/p&gt;
+&lt;p&gt;All the time speaking to “&lt;span class="caps"&gt;DC&lt;/span&gt; Williamson” and my “bank advisor” I had, in fact, been speaking to the same person. The &lt;span class="caps"&gt;PC&lt;/span&gt; on the switchboard asked if the call had been something along the lines of: A suspect was apprehended with your card cloned. You were told to call your advisor who asked for information as part of security… Apparently this is a growing&amp;nbsp;scam.&lt;/p&gt;
+&lt;p&gt;I had made a serious &lt;span class="caps"&gt;PEBKAC&lt;/span&gt; error; I assumed “&lt;span class="caps"&gt;DC&lt;/span&gt; Williamson” hung up before I called the bank and I myself didn’t hang&amp;nbsp;up.&lt;/p&gt;
+&lt;p&gt;I spoke to my bank’s fraud team and just after finishing talking to them I got a call back from the scammer who I told to, polietely, bugger&amp;nbsp;off.&lt;/p&gt;
+&lt;p&gt;I’ve been back to my local branch to pay the money back in and to inform them of this scam. They gave me a few pointers for the&amp;nbsp;future:&lt;/p&gt;
+&lt;p&gt;Your bank will never advise you to withdraw money from your&amp;nbsp;account.&lt;/p&gt;
+&lt;p&gt;Always hang up the phone&amp;nbsp;properly.&lt;/p&gt;
+&lt;p&gt;If you don’t trust a call, try to keep them on the line and seperately call the police, even if they have withheld their number it may still be traceable (this is something the bank clerks themselves are advised to&amp;nbsp;do).&lt;/p&gt;
+&lt;p&gt;Luckily I didn’t lose anything other than a little intrest on my account; talking to my family the assumption is that this “advisor” would have had me pay money into a “temporary account” he had set up for&amp;nbsp;me.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Brown</dc:creator><pubDate>Wed, 21 Aug 2013 00:00:00 +0100</pubDate><guid>tag:blog.alexanderdbrown.com,2013-08-21:a-near-miss.html</guid><category>Life</category></item><item><title>Microsoft Office 365 in the Command Line</title><link>http://blog.alexanderdbrown.com/microsoft-office-365-in-the-command-line.html</link><description>&lt;p&gt;So Aberystwyth University recently made the change from a simple webmail-based email server (I believe it was running SquirrelMail, but I cannot say for certain) to the proprietary monolith that is Microsoft Office&amp;nbsp;365.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Hipster muttrc example" src="/images/mutt.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Naturally, being a geek and all, a &lt;span class="caps"&gt;WUI&lt;/span&gt;-based wasn’t really for me, I much prefer the command line environment. mutt is a great command line email client for which there are plenty of guides. However Office 365’s setup was a little&amp;nbsp;finiky.&lt;/p&gt;
+&lt;p&gt;The main problem was &lt;span class="caps"&gt;IMAP&lt;/span&gt;; for some reason Office 365 didn’t like being &lt;span class="caps"&gt;IMAP&lt;/span&gt; being contacted every 60 seconds for email, ending in authentication errors which mutt never really recovered from in a session. The only way around this was to use &lt;span class="caps"&gt;POP&lt;/span&gt;&amp;nbsp;instead.&lt;/p&gt;
+&lt;p&gt;However this leads to problems with the sent items, drafts, and all folders except the inbox, therefore &lt;span class="caps"&gt;IMAP&lt;/span&gt; is really the only acceptable solution; I’ll have to watch over it and see how it performs with some of the post-&lt;span class="caps"&gt;POP&lt;/span&gt; changes I made to the&amp;nbsp;configuration.&lt;/p&gt;
+&lt;p&gt;Now for the meat of this whole post, the actual muttrc file I personally use (with personal information&amp;nbsp;removed):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Connection&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;ssl_starttls&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;yes
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;ssl_force_tls&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;yes
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;ssl_use_sslv3&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;yes
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;timeout&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;60  &lt;span class="c"&gt;#Check for mail every minute&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;mail_check&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;5
+
+&lt;span class="c"&gt;# Outgoing&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;realname&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;lt;Real Name&amp;gt;&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;from&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;lt;user&amp;gt;&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;smtp_pass&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;lt;pass&amp;gt;&amp;quot;&lt;/span&gt;
+&lt;span class="c"&gt;#&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;smtp_authenticators&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;login&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;smtp_url&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;smtp://&amp;lt;user&amp;gt;@smtp.office365.com:587&amp;quot;&lt;/span&gt;
+
+&lt;span class="c"&gt;# Incoming&lt;/span&gt;
+&lt;span class="c"&gt;# set pop_user=&amp;quot;&amp;lt;user&amp;gt;&amp;quot;&lt;/span&gt;
+&lt;span class="c"&gt;# set pop_pass=&amp;quot;&amp;lt;pass&amp;gt;&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;imap_user&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;lt;user&amp;gt;&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;imap_pass&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;lt;pass&amp;gt;&amp;quot;&lt;/span&gt;
+&lt;span class="c"&gt;#&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;folder&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;imaps://outlook.office365.com:993&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;mbox&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;+&lt;span class="caps"&gt;INBOX&lt;/span&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;postponed&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;+Drafts&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;spoolfile&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;+&lt;span class="caps"&gt;INBOX&lt;/span&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;record&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;+Sent Items&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;trash&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;+Deleted Items&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;imap_check_subscribed
+&lt;span class="nb"&gt;unset &lt;/span&gt;imap_passive
+
+&lt;span class="c"&gt;# Caches&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;header_cache&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;~/.mutt/cache/headers
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;message_cachedir&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;~/.mutt/cache/bodies
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;certificate_file&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;~/.mutt/certificates
+
+&lt;span class="c"&gt;# Useful customizations&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;smart_wrap&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; yes
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;sort&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;threads&amp;#39;&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;sort_aux&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;last-date-received&amp;#39;&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;imap_check_subscribed
+&lt;span class="c"&gt;#&lt;/span&gt;
+ignore &lt;span class="s2"&gt;&amp;quot;Authentication-Results:&amp;quot;&lt;/span&gt;
+ignore &lt;span class="s2"&gt;&amp;quot;DomainKey-Signature:&amp;quot;&lt;/span&gt;
+ignore &lt;span class="s2"&gt;&amp;quot;&lt;span class="caps"&gt;DKIM&lt;/span&gt;-Signature:&amp;quot;&lt;/span&gt;
+hdr_order Date From To Cc
+&lt;span class="c"&gt;#&lt;/span&gt;
+
+mailboxes
+
+&lt;span class="c"&gt;# Editor Information&lt;/span&gt;
+&lt;span class="nb"&gt;set &lt;/span&gt;&lt;span class="nv"&gt;editor&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;vim
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now, there are a few things that need doing to the above configuration file, replace &lt;user&gt; with your username (e.g.: xxx0@aber.ac.uk), &lt;pass&gt; with your password (there are ways of doing this without having your password plaintext. However, as this should be a local config file to your system, you should really set up the permissions such that no one can ever read it and thus your password will be safe anyway). I’ve used the basic outlook.office365.com and smtp.office365.com as the hosts. Yours might be different; you can check this easily through the email settings account page and the option: Settings for &lt;span class="caps"&gt;POP&lt;/span&gt; or &lt;span class="caps"&gt;IMAP&lt;/span&gt;&amp;nbsp;access.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Brown</dc:creator><pubDate>Mon, 12 Aug 2013 00:00:00 +0100</pubDate><guid>tag:blog.alexanderdbrown.com,2013-08-12:microsoft-office-365-in-the-command-line.html</guid><category>SMTP</category><category>IMAP</category><category>mutt</category><category>Technical</category></item><item><title>Raspberry Pi Media Centre</title><link>http://blog.alexanderdbrown.com/raspberry-pi-media-centre.html</link><description>&lt;p&gt;Like many others, I bought a Raspberry Pi with then intention of using it as a 
+media centre. Last year my flatmate had a nice micro-server which we used to 
+play and stream media around the flat. It was a really nice setup; running 
+&lt;span class="caps"&gt;XBMC&lt;/span&gt;, UPnP and some other services. Since leaving the flat for the summer I 
+obviously felt like having a similar setup, albiet with a Raspberry Pi instead 
+of a&amp;nbsp;micro-server.&lt;/p&gt;
+&lt;p&gt;There are three notable flavours of &lt;span class="caps"&gt;XBMC&lt;/span&gt; for the Pi&amp;nbsp;around:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;RaspBMC&lt;/li&gt;
+&lt;li&gt;XBian&lt;/li&gt;
+&lt;li&gt;OpenElec&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Initially I installed RaspBMC, but was reccomended both XBian and OpenElec, so 
+decided to try all three out before&amp;nbsp;settling.&lt;/p&gt;
+&lt;p&gt;XBian seemed the most polished with a neat curses interface, but the options 
+for real system configuration were limited; beyond any of the packages 
+available for install via the curses interface there were few packages 
+available for install via the package manager. I have a few favoured tools, 
+htop for example, which would have been an annoyance to build and install 
+manually, especially knowing that RaspBMC had these in its aptitude 
+repositories. I’d moved for performance more than anything else, and that was 
+marginal at&amp;nbsp;best.&lt;/p&gt;
+&lt;p&gt;Unfortunately, it was a similar story with OpenElec, though lacking the curses 
+interface. I switched back to RaspBMC and set things up even nicer than before.
+The slightly newer version seemed more stable and only really goes down due to
+power&amp;nbsp;issues.&lt;/p&gt;
+&lt;p&gt;So all in all I’d reccomend RaspBMC over the other flavours. It seems a lot 
+nicer both as a technical user and a regular user and just has that added 
+support which makes it that little bit easier to work&amp;nbsp;with.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Brown</dc:creator><pubDate>Mon, 29 Jul 2013 00:00:00 +0100</pubDate><guid>tag:blog.alexanderdbrown.com,2013-07-29:raspberry-pi-media-centre.html</guid><category>Raspberry Pi</category><category>RaspBMC</category><category>XBian</category><category>OpenElec</category><category>Technical</category></item><item><title>Setting Up and Such</title><link>http://blog.alexanderdbrown.com/setting-up-and-such.html</link><description>&lt;p&gt;Once again I have set up a blog. Initially Octopress was considered, but due to
+Celes (the &lt;span class="caps"&gt;VPS&lt;/span&gt; this is hosted on) does not like Ruby, I decided to find an 
+alternative for Python&amp;nbsp;instead.&lt;/p&gt;
+&lt;p&gt;Pelican was a neat alternative for this and seems pretty nifty. We shall see 
+how it goes, but being able to blog in vim certainly has it’s&amp;nbsp;niceties.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Brown</dc:creator><pubDate>Mon, 29 Apr 2013 00:00:00 +0100</pubDate><guid>tag:blog.alexanderdbrown.com,2013-04-29:setting-up-and-such.html</guid><category>Blog</category><category>Python</category><category>Pelican</category><category>Technical</category></item></channel></rss>

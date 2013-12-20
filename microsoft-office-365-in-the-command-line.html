@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <title>Microsoft Office 365 in the Command Line</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph tags -->
+
+            <meta property="og:type" content="article"/>
+            <meta property="og:title" content="Microsoft Office 365 in the Command Line"/>
+            <meta property="og:url" content="http://blog.alexanderdbrown.com/microsoft-office-365-in-the-command-line.html"/>
+            <meta property="og:description" content="So Aberystwyth University recently made the change from a simple webmail-based email server (I believe it was running SquirrelMail, but I cannot say for certain) to the proprietary monolith that is Microsoft Office 365. Naturally, being a geek and all, a WUI-based wasn’t really for me, I much ..."/>
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://blog.alexanderdbrown.com/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="http://blog.alexanderdbrown.com/theme/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://blog.alexanderdbrown.com/theme/css/pygments.css" rel="stylesheet">
+        <link href="http://blog.alexanderdbrown.com/theme/css/typogrify.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://blog.alexanderdbrown.com/theme/css/style.css" type="text/css"/>
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+        <link href="http://blog.alexanderdbrown.com/feeds/all.rss.xml" type="application/atom+xml" rel="alternate"
+              title="Alexander D Brown - Blog RSS Feed"/>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://blog.alexanderdbrown.com" class="navbar-brand">Alexander D Brown - Blog</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="http://blog.alexanderdbrown.com/category/blog.html">Blog</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://blog.alexanderdbrown.com/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+<!-- /.navbar -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://blog.alexanderdbrown.com/microsoft-office-365-in-the-command-line.html"
+                       rel="bookmark"
+                       title="Permalink to Microsoft Office 365 in the Command Line">
+                        Microsoft Office 365 in the Command&nbsp;Line
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="icon-calendar"></i>Mon 12 August 2013
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://blog.alexanderdbrown.com/tag/smtp.html">SMTP</a>
+        /
+	<a href="http://blog.alexanderdbrown.com/tag/imap.html">IMAP</a>
+        /
+	<a href="http://blog.alexanderdbrown.com/tag/mutt.html">mutt</a>
+        /
+	<a href="http://blog.alexanderdbrown.com/tag/technical.html">Technical</a>
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>So Aberystwyth University recently made the change from a simple webmail-based email server (I believe it was running SquirrelMail, but I cannot say for certain) to the proprietary monolith that is Microsoft Office&nbsp;365.</p>
+<p><img alt="Hipster muttrc example" src="/images/mutt.png" /></p>
+<p>Naturally, being a geek and all, a <span class="caps">WUI</span>-based wasn’t really for me, I much prefer the command line environment. mutt is a great command line email client for which there are plenty of guides. However Office 365’s setup was a little&nbsp;finiky.</p>
+<p>The main problem was <span class="caps">IMAP</span>; for some reason Office 365 didn’t like being <span class="caps">IMAP</span> being contacted every 60 seconds for email, ending in authentication errors which mutt never really recovered from in a session. The only way around this was to use <span class="caps">POP</span>&nbsp;instead.</p>
+<p>However this leads to problems with the sent items, drafts, and all folders except the inbox, therefore <span class="caps">IMAP</span> is really the only acceptable solution; I’ll have to watch over it and see how it performs with some of the post-<span class="caps">POP</span> changes I made to the&nbsp;configuration.</p>
+<p>Now for the meat of this whole post, the actual muttrc file I personally use (with personal information&nbsp;removed):</p>
+<div class="highlight"><pre><span class="c"># Connection</span>
+<span class="nb">set </span><span class="nv">ssl_starttls</span><span class="o">=</span>yes
+<span class="nb">set </span><span class="nv">ssl_force_tls</span><span class="o">=</span>yes
+<span class="nb">set </span><span class="nv">ssl_use_sslv3</span><span class="o">=</span>yes
+<span class="nb">set </span><span class="nv">timeout</span><span class="o">=</span>60  <span class="c">#Check for mail every minute</span>
+<span class="nb">set </span><span class="nv">mail_check</span><span class="o">=</span>5
+
+<span class="c"># Outgoing</span>
+<span class="nb">set </span><span class="nv">realname</span><span class="o">=</span><span class="s2">&quot;&lt;Real Name&gt;&quot;</span>
+<span class="nb">set </span><span class="nv">from</span><span class="o">=</span><span class="s2">&quot;&lt;user&gt;&quot;</span>
+<span class="nb">set </span><span class="nv">smtp_pass</span><span class="o">=</span><span class="s2">&quot;&lt;pass&gt;&quot;</span>
+<span class="c">#</span>
+<span class="nb">set </span><span class="nv">smtp_authenticators</span><span class="o">=</span><span class="s2">&quot;login&quot;</span>
+<span class="nb">set </span><span class="nv">smtp_url</span><span class="o">=</span><span class="s2">&quot;smtp://&lt;user&gt;@smtp.office365.com:587&quot;</span>
+
+<span class="c"># Incoming</span>
+<span class="c"># set pop_user=&quot;&lt;user&gt;&quot;</span>
+<span class="c"># set pop_pass=&quot;&lt;pass&gt;&quot;</span>
+<span class="nb">set </span><span class="nv">imap_user</span><span class="o">=</span><span class="s2">&quot;&lt;user&gt;&quot;</span>
+<span class="nb">set </span><span class="nv">imap_pass</span><span class="o">=</span><span class="s2">&quot;&lt;pass&gt;&quot;</span>
+<span class="c">#</span>
+<span class="nb">set </span><span class="nv">folder</span><span class="o">=</span><span class="s2">&quot;imaps://outlook.office365.com:993&quot;</span>
+<span class="nb">set </span><span class="nv">mbox</span><span class="o">=</span><span class="s2">&quot;+<span class="caps">INBOX</span>&quot;</span>
+<span class="nb">set </span><span class="nv">postponed</span><span class="o">=</span><span class="s2">&quot;+Drafts&quot;</span>
+<span class="nb">set </span><span class="nv">spoolfile</span><span class="o">=</span><span class="s2">&quot;+<span class="caps">INBOX</span>&quot;</span>
+<span class="nb">set </span><span class="nv">record</span><span class="o">=</span><span class="s2">&quot;+Sent Items&quot;</span>
+<span class="nb">set </span><span class="nv">trash</span><span class="o">=</span><span class="s2">&quot;+Deleted Items&quot;</span>
+<span class="nb">set </span>imap_check_subscribed
+<span class="nb">unset </span>imap_passive
+
+<span class="c"># Caches</span>
+<span class="nb">set </span><span class="nv">header_cache</span><span class="o">=</span>~/.mutt/cache/headers
+<span class="nb">set </span><span class="nv">message_cachedir</span><span class="o">=</span>~/.mutt/cache/bodies
+<span class="nb">set </span><span class="nv">certificate_file</span><span class="o">=</span>~/.mutt/certificates
+
+<span class="c"># Useful customizations</span>
+<span class="nb">set </span><span class="nv">smart_wrap</span> <span class="o">=</span> yes
+<span class="nb">set </span><span class="nv">sort</span> <span class="o">=</span> <span class="s1">&#39;threads&#39;</span>
+<span class="nb">set </span><span class="nv">sort_aux</span> <span class="o">=</span> <span class="s1">&#39;last-date-received&#39;</span>
+<span class="nb">set </span>imap_check_subscribed
+<span class="c">#</span>
+ignore <span class="s2">&quot;Authentication-Results:&quot;</span>
+ignore <span class="s2">&quot;DomainKey-Signature:&quot;</span>
+ignore <span class="s2">&quot;<span class="caps">DKIM</span>-Signature:&quot;</span>
+hdr_order Date From To Cc
+<span class="c">#</span>
+
+mailboxes
+
+<span class="c"># Editor Information</span>
+<span class="nb">set </span><span class="nv">editor</span><span class="o">=</span>vim
+</pre></div>
+
+
+<p>Now, there are a few things that need doing to the above configuration file, replace <user> with your username (e.g.: xxx0@aber.ac.uk), <pass> with your password (there are ways of doing this without having your password plaintext. However, as this should be a local config file to your system, you should really set up the permissions such that no one can ever read it and thus your password will be safe anyway). I’ve used the basic outlook.office365.com and smtp.office365.com as the hosts. Yours might be different; you can check this easily through the email settings account page and the option: Settings for <span class="caps">POP</span> or <span class="caps">IMAP</span>&nbsp;access.</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-lg-3 well well-sm" id="sidebar">
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="icon-home icon-large"></i>Social</h4></li>
+                    <li class="list-group-item"><a href="https://facebook.com/SoftlySplinter"><i
+                            class="icon-Facebook-sign icon-large"></i>Facebook
+                    </a></li>
+                    <li class="list-group-item"><a href="https://plus.google.com/114797497133165862845"><i
+                            class="icon-Google Plus-sign icon-large"></i>Google Plus
+                    </a></li>
+                    <li class="list-group-item"><a href="http://twitter.com/SoftlySplinter"><i
+                            class="icon-Twitter-sign icon-large"></i>Twitter
+                    </a></li>
+                    <li class="list-group-item"><a href="https://github.com/SoftlySplinter"><i
+                            class="icon-GitHub-sign icon-large"></i>GitHub
+                    </a></li>
+                    <li class="list-group-item"><a href="http://uk.linkedin.com/pub/alexander-brown/22/197/803/"><i
+                            class="icon-LinkedIn-sign icon-large"></i>LinkedIn
+                    </a></li>
+                    <li class="list-group-item"><a href="http://www.quora.com/Alex-Brown-33"><i
+                            class="icon-Quora-sign icon-large"></i>Quora
+                    </a></li>
+                    <li class="list-group-item"><a href="https://www.photographer.io/u/softly"><i
+                            class="icon-Photographer.io-sign icon-large"></i>Photographer.io
+                    </a></li>
+
+
+
+            <li class="list-group-item"><a href="http://blog.alexanderdbrown.com/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>
+                <li class="list-group-item tag-1">
+                    <a href="http://blog.alexanderdbrown.com/tag/technical.html">
+                        Technical
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/xbian.html">
+                        XBian
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/mutt.html">
+                        mutt
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/employability.html">
+                        Employability
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/ispa-2013.html">
+                        ISPA 2013
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/imap.html">
+                        IMAP
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/python.html">
+                        Python
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/raspberry-pi.html">
+                        Raspberry Pi
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/dwarf-fortress.html">
+                        Dwarf Fortress
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/raspbmc.html">
+                        RaspBMC
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/c.html">
+                        C
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/smtp.html">
+                        SMTP
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/fun.html">
+                        Fun
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/academic.html">
+                        Academic
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/programming.html">
+                        Programming
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/pelican.html">
+                        Pelican
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/gregyong.html">
+                        Gregyong
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/life.html">
+                        Life
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/blog.html">
+                        Blog
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/kyffin-williams.html">
+                        Kyffin Williams
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/openelec.html">
+                        OpenElec
+                    </a>
+                </li>
+        </ul>
+    </section>
+</aside>        </div>
+    </div>
+</div>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://blog.alexanderdbrown.com/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://blog.alexanderdbrown.com/theme/js/respond.min.js"></script>
+</body>
+</html>
