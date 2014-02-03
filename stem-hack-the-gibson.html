@@ -3,7 +3,7 @@
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-    <title>Alexander D Brown - Blog - XBian</title>
+    <title>STEM - Hack the Gibson</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,10 +11,10 @@
 
     <!-- Open Graph tags -->
 
-            <meta property="og:type" content="website"/>
-            <meta property="og:title" content="Alexander D Brown - Blog"/>
-            <meta property="og:url" content="http://blog.alexanderdbrown.com"/>
-            <meta property="og:description" content="Alexander D Brown - Blog"/>
+            <meta property="og:type" content="article"/>
+            <meta property="og:title" content="STEM - Hack the Gibson"/>
+            <meta property="og:url" content="http://blog.alexanderdbrown.com/stem-hack-the-gibson.html"/>
+            <meta property="og:description" content="Two of my, now postgraduate, friends from university: Matt Pugh and Max Walker, ran a STEM activity for the Computer Science department. I was invited along to help run one of these sessions; providing the usual malarky of slide turner and general oddsbody, pointing those who were confused the the ..."/>
 
     <!-- Bootstrap -->
         <link rel="stylesheet" href="http://blog.alexanderdbrown.com/theme/css/bootstrap.min.css" type="text/css"/>
@@ -43,7 +43,7 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                        <li >
+                        <li class="active">
                             <a href="http://blog.alexanderdbrown.com/category/blog.html">Blog</a>
                         </li>
             </ul>
@@ -58,16 +58,98 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-9">
-            <article>
-                <h2><a href="http://blog.alexanderdbrown.com/raspberry-pi-media-centre.html">Raspberry Pi Media&nbsp;Centre</a></h2>
-                <div class="summary"><p>Like many others, I bought a Raspberry Pi with then intention of using it as a 
-media centre. Last year my flatmate had a nice micro-server which we used to 
-play and stream media around the flat. It was a really nice setup; running 
-<span class="caps">XBMC</span>, UPnP and some other services ...</p>
-                    <a class="btn btn-default btn-xs" href="http://blog.alexanderdbrown.com/raspberry-pi-media-centre.html">more ...</a>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://blog.alexanderdbrown.com/stem-hack-the-gibson.html"
+                       rel="bookmark"
+                       title="Permalink to STEM - Hack the Gibson">
+                        <span class="caps">STEM</span> - Hack the&nbsp;Gibson
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="icon-calendar"></i>Mon 03 February 2014
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://blog.alexanderdbrown.com/tag/stem.html">STEM</a>
+        /
+	<a href="http://blog.alexanderdbrown.com/tag/aberystwyth-university.html">Aberystwyth University</a>
+        /
+	<a href="http://blog.alexanderdbrown.com/tag/computer-science.html">Computer Science</a>
+        /
+	<a href="http://blog.alexanderdbrown.com/tag/teaching.html">Teaching</a>
+        /
+	<a href="http://blog.alexanderdbrown.com/tag/terminals.html">Terminals</a>
+        /
+	<a href="http://blog.alexanderdbrown.com/tag/networking.html">Networking</a>
+        /
+	<a href="http://blog.alexanderdbrown.com/tag/unix.html">UNIX</a>
+</footer><!-- /.post-info -->                    </div>
                 </div>
-            </article>
-            <hr/>
+                <p>Two of my, now postgraduate, friends from university: Matt Pugh and Max Walker,
+ran a <span class="caps">STEM</span> activity for the Computer Science department. I was invited along to 
+help run one of these sessions; providing the usual malarky of slide turner and
+general oddsbody, pointing those who were confused the the activity in the 
+right direction and, ocasionally, getting them back to where they&#8217;d got to, 
+before they&#8217;d done something silly, like reset the browser they were working&nbsp;in.</p>
+<p>The activity was rather cool from the CompSci perspective; the year 9 children 
+had been given control of a network of computers and had to find and stop a 
+cracker<sup><a href="#foot1">1</a></sup> that had accessed their network. This process was
+only slightly exagerrated: emails were just files in a directory and there was
+an decrypt command, that would have taken at least ten arguments, rather than
+the answer to a number puzzle. But it was meant as an educational activity, not
+a realistic one, but, for the most part, all the commands could have been typed
+into a regular Linux/<span class="caps">UNIX</span> terminal and would have given the same&nbsp;effect.</p>
+<p>Once the kids had settled into their groups around the correct computers, we 
+gave them a quick talk and then proceded to take them through the first&nbsp;computer.</p>
+<p>To start with the game starts like&nbsp;this:</p>
+<p><img alt="The Admin Console" src="/images/stem-1.png" title="The Admin Console" /></p>
+<p>The idea from here is to use the basic Linux/<span class="caps">UNIX</span> tools: <code>ls</code>, <code>pwd</code>, <code>cd</code> and
+<code>cat</code> to navigate the filesystem to the emails directory and read the email&nbsp;there.</p>
+<p>The email explains the scenario: the lead sysadmin is away and its now your 
+task to connect to another computer and investigate the problems its having.
+Moving back up to the home directory there is then a file which contains IPv4
+addresses and passwords for other machines. We then teach them about the <code>ssh</code>
+command and how to get into the next machine; this is a great moment for them
+as they feel they&#8217;ve hacked into someone elses computer; ignoring the fact that
+they were asked to and given the&nbsp;passwords.</p>
+<p><img alt="SSHing into another box" src="/images/stem-2.png" title="SSHing into another box" /></p>
+<p>From here they&#8217;re more or less left to their own devices, the actual flow of 
+the game is fairly repatative: go into emails; find the important one - there 
+was even some spam emails put in there for realism; and then find the <span class="caps">IP</span> 
+address and password using the information from this&nbsp;email.</p>
+<p>This is where a fun non-Linux/<span class="caps">UNIX</span> command comes in: <code>decrypt</code>. Items like a 
+user log file are encrypted in this network and to reveal the contents of them
+they must be&nbsp;decrypted.</p>
+<p><img alt="Dencryption of a log file" src="/images/stem-3.png" title="Dencryption of a log file" /></p>
+<p>Finally they reach the final computer on their network, this is where most of
+the kids finish due to time constraints, but the really clever ones start 
+finding the IPv6 address of the&nbsp;cracker.</p>
+<p><img alt="Partial IPv6 address of the attacker" src="/images/stem-4.png" title="Partial IPv6 address of the attacker" /></p>
+<p>Of course they&#8217;re going to want to <span class="caps">SSH</span> into it to and find a way to make them
+stop, but I won&#8217;t spoil the ending&nbsp;;-).</p>
+<p>The final part is a quick discussion of whether they enjoyed it and if it had
+made them consider a future in Computer Science; there&#8217;s a big push towards it
+in the education system and certainly some of the schools attending said that
+they would be running their first computer science courses in the following&nbsp;year.</p>
+<hr />
+<p><a name="foot1"></a><sup>1</sup> I use <em>cracker</em> instead of <em>hacker</em> because to 
+myself, a <em>hacker</em> is someone who tinkers with existing programs for 
+non-nefarious&nbsp;purposes.</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
 
         </div>
         <div class="col-lg-3 well well-sm" id="sidebar">

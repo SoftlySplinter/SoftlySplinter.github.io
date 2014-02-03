@@ -127,6 +127,9 @@
                     <li class="list-group-item"><a href="http://www.quora.com/Alex-Brown-33"><i
                             class="icon-Quora-sign icon-large"></i>Quora
                     </a></li>
+                    <li class="list-group-item"><a href="http://www.flickr.com/photos/softlysplinter"><i
+                            class="icon-Flickr-sign icon-large"></i>Flickr
+                    </a></li>
                     <li class="list-group-item"><a href="https://www.photographer.io/u/softly"><i
                             class="icon-Photographer.io-sign icon-large"></i>Photographer.io
                     </a></li>
@@ -140,38 +143,13 @@
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/xbian.html">
-                        XBian
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
                     <a href="http://blog.alexanderdbrown.com/tag/mutt.html">
                         mutt
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/employability.html">
-                        Employability
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/ispa-2013.html">
-                        ISPA 2013
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/imap.html">
-                        IMAP
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/python.html">
-                        Python
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/raspberry-pi.html">
-                        Raspberry Pi
+                    <a href="http://blog.alexanderdbrown.com/tag/aberystwyth-university.html">
+                        Aberystwyth University
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
@@ -180,13 +158,8 @@
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/raspbmc.html">
-                        RaspBMC
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/c.html">
-                        C
+                    <a href="http://blog.alexanderdbrown.com/tag/pelican.html">
+                        Pelican
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
@@ -195,51 +168,55 @@
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/fun.html">
-                        Fun
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/academic.html">
-                        Academic
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/programming.html">
-                        Programming
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/pelican.html">
-                        Pelican
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/gregyong.html">
-                        Gregyong
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/life.html">
-                        Life
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/blog.html">
-                        Blog
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="http://blog.alexanderdbrown.com/tag/kyffin-williams.html">
-                        Kyffin Williams
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
                     <a href="http://blog.alexanderdbrown.com/tag/openelec.html">
                         OpenElec
                     </a>
                 </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/ispa-2013.html">
+                        ISPA 2013
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/unix.html">
+                        UNIX
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="http://blog.alexanderdbrown.com/tag/networking.html">
+                        Networking
+                    </a>
+                </li>
         </ul>
+    </section>
+
+
+    <section>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item"><h4><i class="icon-github icon-large"></i>GitHub Repos</h4></li>
+        <div id="gh_repos">
+            <p class="list-group-item">Status updating...</p>
+        </div>
+    </ul>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                if (!window.jXHR) {
+                    var jxhr = document.createElement('script');
+                    jxhr.type = 'text/javascript';
+                    jxhr.src = 'http://blog.alexanderdbrown.com/theme/js/jXHR.js';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(jxhr, s);
+                }
+
+                github.showRepos({
+                    user: 'SoftlySplinter',
+                    count: 5,
+                    skip_forks: false,
+                    target: '#gh_repos'
+                });
+            });
+        </script>
+        <script src="http://blog.alexanderdbrown.com/theme/js/github.js" type="text/javascript"></script>
     </section>
 </aside>        </div>
     </div>

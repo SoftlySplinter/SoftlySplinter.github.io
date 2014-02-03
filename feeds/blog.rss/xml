@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alexander D Brown - Blog</title><link>http://blog.alexanderdbrown.com/</link><description></description><atom:link href="http://blog.alexanderdbrown.com/feeds/blog.rss/xml" rel="self"></atom:link><lastBuildDate>Mon, 18 Nov 2013 17:08:00 +0000</lastBuildDate><item><title>Armok</title><link>http://blog.alexanderdbrown.com/armok.html</link><description>&lt;p&gt;For those who don&amp;#8217;t know me, I do love 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Alexander D Brown - Blog</title><link>http://blog.alexanderdbrown.com/</link><description></description><atom:link href="http://blog.alexanderdbrown.com/feeds/blog.rss/xml" rel="self"></atom:link><lastBuildDate>Mon, 03 Feb 2014 00:00:00 +0000</lastBuildDate><item><title>STEM - Hack the Gibson</title><link>http://blog.alexanderdbrown.com/stem-hack-the-gibson.html</link><description>&lt;p&gt;Two of my, now postgraduate, friends from university: Matt Pugh and Max Walker,
+ran a &lt;span class="caps"&gt;STEM&lt;/span&gt; activity for the Computer Science department. I was invited along to 
+help run one of these sessions; providing the usual malarky of slide turner and
+general oddsbody, pointing those who were confused the the activity in the 
+right direction and, ocasionally, getting them back to where they&amp;#8217;d got to, 
+before they&amp;#8217;d done something silly, like reset the browser they were working&amp;nbsp;in.&lt;/p&gt;
+&lt;p&gt;The activity was rather cool from the CompSci perspective; the year 9 children 
+had been given control of a network of computers and had to find and stop a 
+cracker&lt;sup&gt;&lt;a href="#foot1"&gt;1&lt;/a&gt;&lt;/sup&gt; that had accessed their network. This process was
+only slightly exagerrated: emails were just files in a directory and there was
+an decrypt command, that would have taken at least ten arguments, rather than
+the answer to a number puzzle. But it was meant as an educational activity, not
+a realistic one, but, for the most part, all the commands could have been typed
+into a regular Linux/&lt;span class="caps"&gt;UNIX&lt;/span&gt; terminal and would have given the same&amp;nbsp;effect.&lt;/p&gt;
+&lt;p&gt;Once the kids had settled into their groups around the correct computers, we 
+gave them a quick talk and then proceded to take them through the first&amp;nbsp;computer.&lt;/p&gt;
+&lt;p&gt;To start with the game starts like&amp;nbsp;this:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="The Admin Console" src="/images/stem-1.png" title="The Admin Console" /&gt;&lt;/p&gt;
+&lt;p&gt;The idea from here is to use the basic Linux/&lt;span class="caps"&gt;UNIX&lt;/span&gt; tools: &lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;pwd&lt;/code&gt;, &lt;code&gt;cd&lt;/code&gt; and
+&lt;code&gt;cat&lt;/code&gt; to navigate the filesystem to the emails directory and read the email&amp;nbsp;there.&lt;/p&gt;
+&lt;p&gt;The email explains the scenario: the lead sysadmin is away and its now your 
+task to connect to another computer and investigate the problems its having.
+Moving back up to the home directory there is then a file which contains IPv4
+addresses and passwords for other machines. We then teach them about the &lt;code&gt;ssh&lt;/code&gt;
+command and how to get into the next machine; this is a great moment for them
+as they feel they&amp;#8217;ve hacked into someone elses computer; ignoring the fact that
+they were asked to and given the&amp;nbsp;passwords.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="SSHing into another box" src="/images/stem-2.png" title="SSHing into another box" /&gt;&lt;/p&gt;
+&lt;p&gt;From here they&amp;#8217;re more or less left to their own devices, the actual flow of 
+the game is fairly repatative: go into emails; find the important one - there 
+was even some spam emails put in there for realism; and then find the &lt;span class="caps"&gt;IP&lt;/span&gt; 
+address and password using the information from this&amp;nbsp;email.&lt;/p&gt;
+&lt;p&gt;This is where a fun non-Linux/&lt;span class="caps"&gt;UNIX&lt;/span&gt; command comes in: &lt;code&gt;decrypt&lt;/code&gt;. Items like a 
+user log file are encrypted in this network and to reveal the contents of them
+they must be&amp;nbsp;decrypted.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Dencryption of a log file" src="/images/stem-3.png" title="Dencryption of a log file" /&gt;&lt;/p&gt;
+&lt;p&gt;Finally they reach the final computer on their network, this is where most of
+the kids finish due to time constraints, but the really clever ones start 
+finding the IPv6 address of the&amp;nbsp;cracker.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Partial IPv6 address of the attacker" src="/images/stem-4.png" title="Partial IPv6 address of the attacker" /&gt;&lt;/p&gt;
+&lt;p&gt;Of course they&amp;#8217;re going to want to &lt;span class="caps"&gt;SSH&lt;/span&gt; into it to and find a way to make them
+stop, but I won&amp;#8217;t spoil the ending&amp;nbsp;;-).&lt;/p&gt;
+&lt;p&gt;The final part is a quick discussion of whether they enjoyed it and if it had
+made them consider a future in Computer Science; there&amp;#8217;s a big push towards it
+in the education system and certainly some of the schools attending said that
+they would be running their first computer science courses in the following&amp;nbsp;year.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a name="foot1"&gt;&lt;/a&gt;&lt;sup&gt;1&lt;/sup&gt; I use &lt;em&gt;cracker&lt;/em&gt; instead of &lt;em&gt;hacker&lt;/em&gt; because to 
+myself, a &lt;em&gt;hacker&lt;/em&gt; is someone who tinkers with existing programs for 
+non-nefarious&amp;nbsp;purposes.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Alexander Brown</dc:creator><pubDate>Mon, 03 Feb 2014 00:00:00 +0000</pubDate><guid>tag:blog.alexanderdbrown.com,2014-02-03:stem-hack-the-gibson.html</guid><category>STEM</category><category>Aberystwyth University</category><category>Computer Science</category><category>Teaching</category><category>Terminals</category><category>Networking</category><category>UNIX</category></item><item><title>Armok</title><link>http://blog.alexanderdbrown.com/armok.html</link><description>&lt;p&gt;For those who don&amp;#8217;t know me, I do love 
 &lt;a href="http://bay12games.com/dwarves/"&gt;Dwarf Fortress&lt;/a&gt; here and there. A while back I
 found &lt;a href="https://github.com/Frib/Armoki/"&gt;Armok&lt;/a&gt;; a programming language inspired 
 by the stupendous amounts of !!fun!! dwarf fortress can&amp;nbsp;be.&lt;/p&gt;
