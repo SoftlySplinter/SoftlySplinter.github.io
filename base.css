@@ -1,23 +1,23 @@
 html {
-  color-scheme: light dark;
+    color-scheme: light dark;
 }
 
 body {
-  font-family: system-ui;
-  font-size: 1.25rem;
-  line-height: 1.5;
+    font-family: system-ui;
+    font-size: 1.25rem;
+    line-height: 1.5;
 }
 
 img,
 svg,
 video {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 main {
-  max-width: min(70ch, 100% - 4rem);
-  margin-inline: auto;
+    max-width: min(70ch, 100% - 4rem);
+    margin-inline: auto;
 }
 
 h3 {
@@ -33,11 +33,42 @@ h3 a {
 }
 
 
+.technologies {
+    list-style: none;
+
+    >li:first-child::before {
+
+        content: "\F2C8";
+        font-family: "Bootstrap-icons";
+        padding-inline-end: .25em;
+    }
+
+    li {
+        display: inline-block;
+        padding-right: 0.25em;
+    }
+
+    ;
+}
+
+.job-title::before {
+    content: "\F4D3";
+    font-family: "Bootstrap-icons";
+    padding-inline-end: .25em;
+}
+
+.job-dates::before {
+    content: "\F1F6";
+    font-family: "Bootstrap-icons";
+    padding-inline-end: .25em;
+}
+
 ul {
     display: inline-table;
     margin: 0;
     padding: 0;
 }
- li {
+
+li {
     list-style-type: none;
 }
