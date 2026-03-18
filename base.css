@@ -20,8 +20,47 @@ main {
     margin-inline: auto;
 }
 
+h1::before {
+    content: "\F4E1";
+    font-family: "Bootstrap-icons";
+    padding-inline-end: .25em;
+}
+
+h1 {
+    margin: 0;
+}
+
+.socials {
+    .email::before {
+        content: '\F32F';
+        font-family: "Bootstrap-icons";
+        padding-inline-end: .25em;
+    }
+    .github::before {
+        content: '\F3ED';
+        font-family: "Bootstrap-icons";
+        padding-inline-end: .25em;
+    }
+    .linkedin::before {
+        content: '\F472';
+        font-family: "Bootstrap-icons";
+        padding-inline-end: .25em;
+    }
+}
+
+section {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    border-bottom: 2px solid gray;
+}
+
+h2 {
+    margin: 0;
+}
+
 h3 {
-    margin: 0
+    margin: 0;
 }
 
 h3 a {
@@ -71,4 +110,4 @@ ul {
 
 li {
     list-style-type: none;
-}
+} 
