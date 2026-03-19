@@ -27,8 +27,8 @@ main {
     max-width: min(70ch, 100% - 4rem);
     margin-inline: auto;
     background-color: #00000050;
-    padding-right: 5em;
-    padding-left: 5em;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 h1::before {
