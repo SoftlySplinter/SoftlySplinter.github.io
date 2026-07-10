@@ -89,6 +89,7 @@ main {
 
 #controls>button:hover {
     background-size: 48px 48px;
+    cursor: pointer;
 }
 
 #controls>button:active {
