@@ -9,10 +9,12 @@ search.addEventListener("focusout", (event) => {
     search.classList.remove("focus")
 })
 
-function run_search(form) {
+async function run_search(form) {
     console.log(form);
     query = search.value;
-    fetch(`https://duckduckgo.com/?q=${query}`)
+    response = await fetch(`https://duckduckgo.com/?q=${query}`, {mode: "no-cors"});
+
+    /*
         .then(response => {
             if (!response.ok) {
                 throw Error(response)
@@ -27,10 +29,11 @@ function run_search(form) {
         })
         .then(vqd => {
             console.log(vqd);
-            return await fetch(`https://duckduckgo.com/i.js?l=en-us&o=json&q=${query}&vqd=${vqd}&f=,,,&p=1&v7exp=a`, {
+            fetch(`https://duckduckgo.com/i.js?l=en-us&o=json&q=${query}&vqd=${vqd}&f=,,,&p=1&v7exp=a`, {
+                mode: "no-cors",
                 headers: {
                     'authority': 'duckduckgo.com',
-                    'accept': 'application/json, text/javascript, */*; q=0.01',
+                    'accept': 'application/json, text/javascript, * /*; q=0.01',
                     'sec-fetch-dest': 'empty',
                     'x-requested-with': 'XMLHttpRequest',
                     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36',
@@ -39,11 +42,10 @@ function run_search(form) {
                     'referer': 'https://duckduckgo.com/',
                     'accept-language': 'en-US,en;q=0.9',
                 }
+            }).then(response => {
+                console.log(response);
             })
         })
-        .then(response => {
-            console.log(response)
-        })
-        .catch((error) => console.error(error))
+        .catch((error) => console.error(error))*/
     return false;
 }
